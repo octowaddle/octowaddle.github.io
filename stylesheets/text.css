@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+:root {
+  font-size: 20px;
+  font-family: "Share Tech Mono", monospace;
+}
+
+p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+a {
+  padding: 0.1em;
+  position: relative;
+  transition: color 0.2s ease-in-out;
+}
+
+a::after {
+  background: var(--foreground1);
+  bottom: 0;
+  content: "";
+  height: 0.1em;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transition: height 0.2s ease-in-out, background 0.2s ease-in-out;
+  z-index: -1;
+}
+
+a:hover {
+  color: var(--background1);
+}
+
+a:hover::after {
+  height: 100%;
+}
+
+ul {
+  margin-left: 1rem;
+  list-style: none;
+  list-style-position: inside;
+}
+
+li::before {
+  content: "-";
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.25em;
+  text-transform: lowercase;
+}
+
+h1:not(:first-child),
+h2:not(:first-child),
+h3:not(:first-child),
+h4:not(:first-child),
+h5:not(:first-child),
+h6:not(:first-child) {
+  margin-top: 2rem;
+}
+
+h1:not(:last-child),
+h2:not(:last-child),
+h3:not(:last-child),
+h4:not(:last-child),
+h5:not(:last-child),
+h6:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+.subheading {
+  margin-top: -1rem;
+  margin-left: 1rem;
+  font-size: 1.25rem;
+  opacity: 50%;
+}
+
+.subheading::before {
+  content: "[";
+}
+
+.subheading::after {
+  content: "]";
+}

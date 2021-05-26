@@ -1,0 +1,22 @@
+:root {
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  --foreground1: #0f0f0f;
+  --background1: #f2f2f2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground1: #f2f2f2;
+    --background1: #0f0f0f;
+  }
+}
+
+:root {
+  color: var(--foreground1);
+  background-color: var(--background1);
+}
+
+::selection {
+  background-color: var(--foreground1);
+  color: var(--background1);
+}
