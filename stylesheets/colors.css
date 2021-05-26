@@ -15,8 +15,3 @@
   color: var(--foreground1);
   background-color: var(--background1);
 }
-
-::selection {
-  background-color: var(--foreground1);
-  color: var(--background1);
-}

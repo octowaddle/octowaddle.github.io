@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap');
 
 :root {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Share Tech Mono", monospace;
 }
 
@@ -36,16 +39,18 @@ a:hover::after {
 }
 
 ul {
-  margin-left: 1.5rem;
-  list-style: none;
-  list-style-position: inside;
+  margin-left: 2rem;
 }
 
-li::before {
-  content: "-";
-  font-weight: bold;
-  margin-right: 0.5rem;
+ul > li::before {
+  content: "\2014";
+  position: absolute;
   margin-left: -1rem;
+}
+
+::selection {
+  background-color: var(--foreground1);
+  color: var(--background1);
 }
 
 h1,
@@ -79,6 +84,15 @@ h6:not(:last-child) {
 
 h1 {
   font-size: 3rem;
+  background-color: var(--foreground1);
+  color: var(--background1);
+  padding: 0.25rem 0.5rem;
+  padding-top: 0.5rem;
+}
+
+h1::selection {
+  color: var(--foreground1);
+  background-color: var(--background1);
 }
 
 h2 {
@@ -102,10 +116,10 @@ h6 {
 }
 
 .subheading {
-  margin-top: -1rem;
-  margin-left: 1rem;
-  font-size: 1.25rem;
+  margin-top: -0.5rem;
+  font-size: 1.5rem;
   opacity: 50%;
+  text-align: right;
 }
 
 .subheading::before {
