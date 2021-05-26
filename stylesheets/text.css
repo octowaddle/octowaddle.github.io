@@ -36,7 +36,7 @@ a:hover::after {
 }
 
 ul {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
   list-style: none;
   list-style-position: inside;
 }
@@ -45,6 +45,7 @@ li::before {
   content: "-";
   font-weight: bold;
   margin-right: 0.5rem;
+  margin-left: -1rem;
 }
 
 h1,
